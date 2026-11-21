@@ -1,90 +1,71 @@
-# TCC — Aprendizado Federado para Previsão de Temperatura
+# Metodologia: Previsão de Temperatura com Aprendizagem Federada
 
-Projeto de prova de conceito utilizando **Flower (flwr)** + **PyTorch** para treinar
-um modelo LSTM de forma federada, simulando 2 estações meteorológicas com dados
-sintéticos e climas distintos.
+Implementação dos três paradigmas de treinamento (Local, Centralizado e Federado) usados no trabalho, com as arquiteturas LSTM e TCN e as estratégias de agregação FedAvg, FedMedian, FedYogi e FedAdam.
 
----
-
-## Estrutura do Projeto
+## Estrutura
 
 ```
-prova_conceito/
+Metodologia/
+├── pyproject.toml          # Configuração do Flower e hiperparâmetros
 ├── src/
-│   ├── __init__.py
-│   ├── task.py         # Modelo DeepLSTM, geração de dados, treino e avaliação
-│   ├── client_app.py   # Lógica do cliente federado (estação meteorológica)
-│   └── server_app.py   # Lógica do servidor (agregação FedAvg, FedMedian, FedYogi ou FedAdam)
-├── pyproject.toml      # Configurações do projeto e do Flower
-└── README.md
+│   ├── task.py             # Modelos (LSTM/TCN), preparação de dados, treino e avaliação
+│   ├── client_app.py       # Cliente federado (uma estação = um cliente)
+│   ├── server_app.py       # Servidor federado
+│   ├── strategies.py       # Estratégias de agregação
+│   └── utils/
+│       └── experiment_tracker.py   # Salva configurações, métricas e checkpoints
+├── treino_global.py        # Baseline Centralizado
+└── treino_local.py         # Baseline Local
 ```
-
----
 
 ## Instalação
 
 ```bash
-conda activate flower-env
-cd C:\TCC\prova_conceito
 pip install -e .
 ```
 
----
+## Como executar
 
-## Como Executar
-
-### Rodando com FedAvg (padrão)
+**Federado**
 
 ```bash
 flwr run . --stream
 ```
 
-
-Depois rode novamente:
-```bash
-flwr run . --stream
-```
-
-### Sobrescrevendo parâmetros direto no terminal (sem editar o arquivo)
+Os parâmetros (modelo, estratégia, rodadas etc.) são definidos em `pyproject.toml` ou sobrescritos na linha de comando:
 
 ```bash
-# FedAvg com 5 rodadas e 5 épocas locais
-flwr run . --stream --run-config "num-server-rounds=5 local-epochs=5 strategy=fedavg"
+flwr run . --stream --run-config "strategy=fedmedian model=tcn num-server-rounds=50"
 ```
 
----
+**Centralizado e Local**
 
-## Parâmetros Configuráveis (`pyproject.toml`)
-
-| Parâmetro           | Descrição                                      | Padrão    |
-|---------------------|------------------------------------------------|-----------|
-| `num-server-rounds` | Número de rodadas de comunicação federada      | `10`      |
-| `strategy`          | Estratégia de agregação: `fedavg`, `fedmedian`, `fedyogi` ou `fedadam` | `fedavg` |
-| `local-epochs`      | Épocas de treino local por rodada              | `3`       |
-| `batch-size`        | Tamanho do batch no treino local               | `64`      |
-| `lr`                | Taxa de aprendizado                            | `0.001`   |
-| `fraction-fit`      | Fração de clientes que treinam por rodada      | `1.0`     |
-| `fraction-evaluate` | Fração de clientes que avaliam por rodada      | `1.0`     |
-
----
-
-## Métricas Monitoradas
-
-- **train_loss**: MSE do treino local em cada cliente
-- **mse**: Mean Squared Error agregado da federação
-- **rmse**: Raiz do MSE (em °C) — métrica principal do TCC
-
----
-
-## Fluxo Federado
-
+```bash
+python -m treino_global
+python -m treino_local
 ```
-Rodada 1..N:
-  [Servidor] envia pesos globais
-       ↓
-  [Cliente 0]  treina localmente → devolve pesos + métricas
-  [Cliente 1]  treina localmente → devolve pesos + métricas
-       ↓
-  [Servidor] agrega pesos (FedAvg, FedMedian, FedYogi ou FedAdam)
-  [Servidor] calcula RMSE médio ponderado
-```
+
+## Principais parâmetros
+
+| Parâmetro | Descrição | Opções |
+|-----------|-----------|--------|
+| `model` | Arquitetura | `lstm`, `tcn` |
+| `strategy` | Agregação federada | `fedavg`, `fedmedian`, `fedyogi`, `fedadam` |
+| `num-server-rounds` | Rodadas de comunicação | inteiro |
+| `local-epochs` | Épocas locais por rodada | inteiro |
+| `lr` | Taxa de aprendizado | float |
+
+## Fluxo geral
+
+1. Cada estação carrega seus dados, normaliza e monta janelas deslizantes (24 h de entrada, previsão de 1 h).
+2. A cada rodada, o servidor envia os pesos globais e cada cliente treina localmente.
+3. O servidor agrega os pesos e os clientes avaliam o modelo no próprio conjunto de teste.
+4. Os dados brutos nunca saem das estações; apenas pesos e métricas são trocados.
+
+## Métricas
+
+RMSE, MAE e R² em °C, calculados no conjunto de teste de cada estação.
+
+## Resultados
+
+Cada execução gera uma pasta em `results/` (`Federado/`, `Global/` ou `Local/`) com `config.json`, `metricas.json` e o melhor checkpoint.
