@@ -1,0 +1,4 @@
+Paradigma,RMSE norm média,RMSE norm std,RMSE °C média,RMSE °C std
+FedAvg,0.0343,0.0011,0.3723,0.0383
+Centralizado,0.0345,0.0009,0.375,0.0411
+Local Isolado,0.0354,0.001,0.3866,0.0636

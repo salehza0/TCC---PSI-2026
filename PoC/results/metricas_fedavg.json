@@ -1,0 +1,548 @@
+{
+  "strategy": "fedavg",
+  "total_rodadas": 30,
+  "melhor_rodada": 29,
+  "melhor_rmse": 0.03426725226487774,
+  "historico": [
+    {
+      "rodada": 1,
+      "rmse_global": 0.041072375367655845,
+      "mse_global": 0.0016869400183416228,
+      "melhor_ate_agora": true,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.00160312807737765,
+          "rmse": 0.04003908187480889,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0017707519593055953,
+          "rmse": 0.04208030369787741,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 2,
+      "rmse_global": 0.034735925826919166,
+      "mse_global": 0.0012065845430532301,
+      "melhor_ate_agora": true,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012810030581683598,
+          "rmse": 0.03579110305883796,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0011321660279381004,
+          "rmse": 0.033647674926183244,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 3,
+      "rmse_global": 0.0344325890927707,
+      "mse_global": 0.001185603191631592,
+      "melhor_ate_agora": true,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012316240071827038,
+          "rmse": 0.03509450109607919,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0011395823760804804,
+          "rmse": 0.03375770098926289,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 4,
+      "rmse_global": 0.0350967308817669,
+      "mse_global": 0.0012317805185871706,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0011687943764792925,
+          "rmse": 0.03418763484769446,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.001294766660695049,
+          "rmse": 0.035982866210115184,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 5,
+      "rmse_global": 0.03494982502553017,
+      "mse_global": 0.0012214902693151752,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012135685262778266,
+          "rmse": 0.03483631045730628,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012294120123525236,
+          "rmse": 0.03506297209810548,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 6,
+      "rmse_global": 0.035214779527131305,
+      "mse_global": 0.0012400806971444662,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012563770562833683,
+          "rmse": 0.035445409523425855,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012237843380055644,
+          "rmse": 0.034982629089386125,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 7,
+      "rmse_global": 0.036301203545106735,
+      "mse_global": 0.0013177773788232696,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.001300107079177079,
+          "rmse": 0.03605699764507687,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.00133544767846946,
+          "rmse": 0.03654377756156936,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 8,
+      "rmse_global": 0.03558999262076063,
+      "mse_global": 0.0012666475747457962,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012747882992367853,
+          "rmse": 0.03570417761602675,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012585068502548066,
+          "rmse": 0.035475440099522464,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 9,
+      "rmse_global": 0.03482518569191202,
+      "mse_global": 0.001212793558476154,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0011166040870276364,
+          "rmse": 0.033415626389873894,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0013089830299246718,
+          "rmse": 0.036179870507295514,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 10,
+      "rmse_global": 0.03511548247898588,
+      "mse_global": 0.0012330971097319642,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012346745616841045,
+          "rmse": 0.03513793621833964,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012315196577798236,
+          "rmse": 0.035093014372946416,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 11,
+      "rmse_global": 0.0357975487534335,
+      "mse_global": 0.0012814644967544483,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012729157651351257,
+          "rmse": 0.035677945080050864,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012900132283737713,
+          "rmse": 0.035916754145854705,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 12,
+      "rmse_global": 0.034788156158806934,
+      "mse_global": 0.0012102158089295368,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0011989041432653638,
+          "rmse": 0.034625195209057866,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012215274745937098,
+          "rmse": 0.034950357288498636,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 13,
+      "rmse_global": 0.036050451959493454,
+      "mse_global": 0.0012996350864837455,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0013199729908427054,
+          "rmse": 0.036331432545974644,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012792971821247855,
+          "rmse": 0.03576726411293972,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 14,
+      "rmse_global": 0.035953498698664814,
+      "mse_global": 0.0012926540686748922,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012815450392240151,
+          "rmse": 0.03579867370761122,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0013037630981257693,
+          "rmse": 0.036107659826216505,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 15,
+      "rmse_global": 0.03604000921269648,
+      "mse_global": 0.0012988822640512476,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0013234993633390827,
+          "rmse": 0.036379930776996854,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012742651647634127,
+          "rmse": 0.03569685090821616,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 16,
+      "rmse_global": 0.034534076145298825,
+      "mse_global": 0.0011926024152092974,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.001180409794588658,
+          "rmse": 0.03435709234770396,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.001204795035829937,
+          "rmse": 0.03471015753104467,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 17,
+      "rmse_global": 0.03621594000972637,
+      "mse_global": 0.0013115943107880992,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012872103612277318,
+          "rmse": 0.03587771399110779,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0013359782603484663,
+          "rmse": 0.03655103637858257,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 18,
+      "rmse_global": 0.03478251543933972,
+      "mse_global": 0.0012098233802879058,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.001244196854531765,
+          "rmse": 0.03527317471580585,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.001175449906044047,
+          "rmse": 0.03428483492805597,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 19,
+      "rmse_global": 0.0379046775297102,
+      "mse_global": 0.001436764578631317,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0013809261536649005,
+          "rmse": 0.037160814760509496,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0014926030035977336,
+          "rmse": 0.03863422062883803,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 20,
+      "rmse_global": 0.0356481681131651,
+      "mse_global": 0.0012707918898244813,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012567748580212621,
+          "rmse": 0.03545102054978477,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012848089216277003,
+          "rmse": 0.0358442313577471,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 21,
+      "rmse_global": 0.034592284077011204,
+      "mse_global": 0.0011966261176646431,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012149255606345832,
+          "rmse": 0.034855782312761006,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0011783266746947035,
+          "rmse": 0.034326763242326,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 22,
+      "rmse_global": 0.034333704400426136,
+      "mse_global": 0.0011788032578558408,
+      "melhor_ate_agora": true,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0011120445931076326,
+          "rmse": 0.033347332623579244,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012455619226040488,
+          "rmse": 0.03529251935756427,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 23,
+      "rmse_global": 0.03735286761099739,
+      "mse_global": 0.001395236718764698,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0014270885339514776,
+          "rmse": 0.037776825355652605,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0013633849035779183,
+          "rmse": 0.03692404235153456,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 24,
+      "rmse_global": 0.03503512128852078,
+      "mse_global": 0.0012274597237013618,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0011991682377728548,
+          "rmse": 0.03462900861666206,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012557512096298688,
+          "rmse": 0.035436580106295086,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 25,
+      "rmse_global": 0.03494369019105649,
+      "mse_global": 0.0012210614841685376,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012166330633176998,
+          "rmse": 0.03488026753506486,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012254899050193754,
+          "rmse": 0.035006997943545164,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 26,
+      "rmse_global": 0.034528543631415526,
+      "mse_global": 0.0011922203253065659,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.00122210857225582,
+          "rmse": 0.034958669486349445,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0011623320783573118,
+          "rmse": 0.03409299163108617,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 27,
+      "rmse_global": 0.035480353768817856,
+      "mse_global": 0.0012588555035604673,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012577690565111963,
+          "rmse": 0.03546503991977446,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012599419506097382,
+          "rmse": 0.03549566101102694,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 28,
+      "rmse_global": 0.035962575644060524,
+      "mse_global": 0.0012933068469547751,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0012675720478662036,
+          "rmse": 0.03560297807580433,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0013190416460433466,
+          "rmse": 0.03631861294217259,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 29,
+      "rmse_global": 0.03426725226487774,
+      "mse_global": 0.0011742445777847687,
+      "melhor_ate_agora": true,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.0011194642781364647,
+          "rmse": 0.03345839622780005,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0012290248774330724,
+          "rmse": 0.03505745109720717,
+          "num_amostras": 3500
+        }
+      }
+    },
+    {
+      "rodada": 30,
+      "rmse_global": 0.03661657991189755,
+      "mse_global": 0.001340773924444379,
+      "melhor_ate_agora": false,
+      "clientes": {
+        "estacao_0": {
+          "mse": 0.001296817303889177,
+          "rmse": 0.036011349653812995,
+          "num_amostras": 3500
+        },
+        "estacao_1": {
+          "mse": 0.0013847305449995804,
+          "rmse": 0.03721196776575488,
+          "num_amostras": 3500
+        }
+      }
+    }
+  ]
+}

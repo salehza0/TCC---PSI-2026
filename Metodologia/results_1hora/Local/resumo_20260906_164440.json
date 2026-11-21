@@ -1,0 +1,135 @@
+{
+  "config": {
+    "modelos": [
+      "lstm",
+      "tcn"
+    ],
+    "epochs": 50,
+    "lr": 0.0001,
+    "batch_size": 64,
+    "split": 0.8,
+    "timestamp": "20260906_164440"
+  },
+  "estacoes": {
+    "A701": {
+      "lstm": {
+        "melhor_epoca": 48,
+        "metricas": {
+          "mse_norm": 0.0303351496854289,
+          "rmse_norm": 0.1741698874244021,
+          "mae_norm": 0.110546353843176,
+          "mse_celsius": 0.6555779173192964,
+          "rmse_celsius": 0.8096776626036415,
+          "mae_celsius": 0.5139057888404965
+        }
+      },
+      "tcn": {
+        "melhor_epoca": 42,
+        "metricas": {
+          "mse_norm": 0.031246682092773193,
+          "rmse_norm": 0.17676731058873185,
+          "mae_norm": 0.1130040747875517,
+          "mse_celsius": 0.6752771943419134,
+          "rmse_celsius": 0.8217525140466035,
+          "mae_celsius": 0.5253311952583416
+        }
+      }
+    },
+    "A706": {
+      "lstm": {
+        "melhor_epoca": 38,
+        "metricas": {
+          "mse_norm": 0.03610369169689489,
+          "rmse_norm": 0.19000971474347012,
+          "mae_norm": 0.12704310710683014,
+          "mse_celsius": 0.77339232655651,
+          "rmse_celsius": 0.8794272718971763,
+          "mae_celsius": 0.5879971623931926
+        }
+      },
+      "tcn": {
+        "melhor_epoca": 43,
+        "metricas": {
+          "mse_norm": 0.03579384332635638,
+          "rmse_norm": 0.18919260906905527,
+          "mae_norm": 0.12556525997140192,
+          "mse_celsius": 0.7667549346193544,
+          "rmse_celsius": 0.8756454388731517,
+          "mae_celsius": 0.5811572012030747
+        }
+      }
+    },
+    "A744": {
+      "lstm": {
+        "melhor_epoca": 50,
+        "metricas": {
+          "mse_norm": 0.02555379460876187,
+          "rmse_norm": 0.15985554294037435,
+          "mae_norm": 0.1035484065386382,
+          "mse_celsius": 0.6246855263531738,
+          "rmse_celsius": 0.790370499419844,
+          "mae_celsius": 0.5119722737459232
+        }
+      },
+      "tcn": {
+        "melhor_epoca": 41,
+        "metricas": {
+          "mse_norm": 0.026139492327065177,
+          "rmse_norm": 0.16167712369740248,
+          "mae_norm": 0.1051099711069555,
+          "mse_celsius": 0.6390034346342673,
+          "rmse_celsius": 0.7993769039910193,
+          "mae_celsius": 0.5196930855803782
+        }
+      }
+    },
+    "A755": {
+      "lstm": {
+        "melhor_epoca": 42,
+        "metricas": {
+          "mse_norm": 0.029120886215770785,
+          "rmse_norm": 0.17064842869411598,
+          "mae_norm": 0.10980668314027064,
+          "mse_celsius": 0.6966469008686074,
+          "rmse_celsius": 0.8346537610701862,
+          "mae_celsius": 0.5370723995235313
+        }
+      },
+      "tcn": {
+        "melhor_epoca": 48,
+        "metricas": {
+          "mse_norm": 0.029485511700763845,
+          "rmse_norm": 0.17171345812359567,
+          "mae_norm": 0.11024331430142575,
+          "mse_celsius": 0.7053696853407558,
+          "rmse_celsius": 0.8398628967520567,
+          "mae_celsius": 0.539207993994851
+        }
+      }
+    },
+    "A771": {
+      "lstm": {
+        "melhor_epoca": 50,
+        "metricas": {
+          "mse_norm": 0.025174550985861004,
+          "rmse_norm": 0.1586649015562705,
+          "mae_norm": 0.09999689209190282,
+          "mse_celsius": 0.523063319469303,
+          "rmse_celsius": 0.7232311659969466,
+          "mae_celsius": 0.4558088660714238
+        }
+      },
+      "tcn": {
+        "melhor_epoca": 44,
+        "metricas": {
+          "mse_norm": 0.025636332823584476,
+          "rmse_norm": 0.1601134998168002,
+          "mae_norm": 0.09994640921552976,
+          "mse_celsius": 0.5326579748435312,
+          "rmse_celsius": 0.7298342105187527,
+          "mae_celsius": 0.45557875349338
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "strategy": "fedyogi",
+  "model": "tcn",
+  "num_rounds": 50,
+  "local_epochs": 1,
+  "batch_size": 64,
+  "learning_rate": 0.0001,
+  "fraction_fit": 1.0,
+  "fraction_evaluate": 1.0,
+  "n_features": 8,
+  "timestamp": "2026-09-07T18:04:21.578034",
+  "experiment_name": "fedyogi_tcn_20260907_180421"
+}

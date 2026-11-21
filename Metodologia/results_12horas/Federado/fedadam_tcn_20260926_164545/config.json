@@ -1,0 +1,13 @@
+{
+  "strategy": "fedadam",
+  "model": "tcn",
+  "num_rounds": 50,
+  "local_epochs": 1,
+  "batch_size": 64,
+  "learning_rate": 0.0001,
+  "fraction_fit": 1.0,
+  "fraction_evaluate": 1.0,
+  "n_features": 8,
+  "timestamp": "2026-09-26T16:45:45.816992",
+  "experiment_name": "fedadam_tcn_20260926_164545"
+}

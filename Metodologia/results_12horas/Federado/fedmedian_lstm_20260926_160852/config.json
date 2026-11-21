@@ -1,0 +1,13 @@
+{
+  "strategy": "fedmedian",
+  "model": "lstm",
+  "num_rounds": 50,
+  "local_epochs": 1,
+  "batch_size": 64,
+  "learning_rate": 0.0001,
+  "fraction_fit": 1.0,
+  "fraction_evaluate": 1.0,
+  "n_features": 8,
+  "timestamp": "2026-09-26T16:08:52.960838",
+  "experiment_name": "fedmedian_lstm_20260926_160852"
+}
